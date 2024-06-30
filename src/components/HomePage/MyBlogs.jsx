@@ -6,9 +6,9 @@ import React from "react";
 
 const BlogCard = () => {
   return (
-    <div className="w-full h-[500px] border border-adaptive-strong rounded-md p-2 bg-black bg-opacity-[0.01]">
+    <div className=" w-full h-[500px] border border-adaptive-strong rounded-md p-2 bg-black bg-opacity-[0.01]">
       {/* IMAGE CARD */}
-      <div className="w-full h-[300px] rounded-md overflow-hidden">
+      <div className="blogcard w-full h-[300px] rounded-md overflow-hidden">
         <Image
           src={
             process.env.NEXT_PUBLIC_BASE_URL + "/assets/images/blog-product.jpg"
@@ -16,7 +16,7 @@ const BlogCard = () => {
           alt="blog-product"
           width={500}
           height={500}
-          className="relative w-full h-full object-cover"
+          className="blogcard_img relative w-full h-full object-cover"
         />
       </div>
       {/* INFO CONTAINER */}

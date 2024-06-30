@@ -3,7 +3,7 @@ import React from "react";
 
 const NeedHelp = () => {
   return (
-    <div className="relative w-full px-[150px] py-[100px] flex justify-center items-center">
+    <div className="relative w-full px-[150px] py-[100px] pb-[200px] flex justify-center items-center">
       {/* CONTAINER */}
       <div className="needhelp_container border border-adaptive-strong">
         <div className="inline-block">

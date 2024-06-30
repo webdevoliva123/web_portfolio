@@ -10,8 +10,6 @@ import Link from "next/link";
 const Testimonial = () => {
   const swiperRef = useRef();
 
-  console.log(swiperRef);
-
   return (
     <div className="w-full px-[150px] py-[100px] bg-adaptive-strong">
       {/* TITLE */}

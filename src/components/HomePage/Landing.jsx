@@ -17,7 +17,7 @@ const Landing = () => {
         <div className="absolute bottom-0 right-20 h-[800px] w-auto">
           <Image
             src={
-              process.env.NEXT_PUBLIC_BASE_URL + "/assets/images/onboard4.png"
+              process.env.NEXT_PUBLIC_BASE_URL + "/assets/images/onboard.png"
             }
             alt="bg-image"
             width={500}

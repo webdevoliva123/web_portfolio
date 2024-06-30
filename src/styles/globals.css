@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('./widget/widget.css');
+@import url('./Home/main.css');
+@import url('./Home/whaticando.css');
+@import url('./needhelp/needHelp.css');
+
+@font-face {
+  font-family: "grotesuqe" ;
+  src: url('../../public/assets/fonts/BricolageGrotesque.ttf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Inter";
+  src: url('../../public/assets/fonts/Inter.ttf');
 }
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-grotesuqe : "grotesuqe", sans-serif;
+  --adaptive-color-extrastrong: rgb(213, 246, 83);
+  --adaptive-color-extrastrong-hover: rgb(235, 255, 158);
+  --adaptive-color-strong: rgb(0, 0, 0);
+  --adaptive-color-strong-hover: rgb(59, 59, 59);
+  --adaptive-color-weak: rgba(255, 255, 255, 1);
+  --adaptive-color-weak-hover: rgb(224, 224, 224);
+  --adaptive-off-white: rgb(244, 244, 244,0.8);
+  --aptive-border-strong:rgba(0,0,0,0.1);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+}
+
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  max-width: 1600px;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+ }
+
+/* small screens */
+@media screen and (min-width: 320px) {
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* medium screens */
+@media screen and (min-width: 600px) {
+}
+
+/* large screens */
+@media screen and (min-width: 1280px) {
 }
